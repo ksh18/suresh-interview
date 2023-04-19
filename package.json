@@ -10,7 +10,14 @@
   "license": "ISC",
   "devDependencies": {
     "cypress": "^10.7",
-    "cypress-iframe": "^1.0.1"
+    "cypress-iframe": "^1.0.1",
+    "multiple-cucumber-html-reporter": "^3.3.0"
+  },
+  "cypress-cucumber-preprocessor": {
+    "json": {
+      "enabled": true,
+      "output": "cucumber-reports/results.json"
+    }
   },
   "dependencies": {
     "@badeball/cypress-cucumber-preprocessor": "^16.0.3"

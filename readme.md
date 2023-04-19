@@ -24,9 +24,14 @@ After cloning the repo on your machine, open a terminal, CD into the project's r
 
 or run from the command line
 
-# Headless
+### Headless
 1) run `npx cypress run --spec "cypress/e2e/features/tabs.feature" --browser chrome`.
 
-# HeadMode
+### HeadMode
 1) run `npx cypress run --spec "cypress/e2e/features/tabs.feature" --browser chrome --headed`.
 
+### Results and Report
+CucumberHTML report will be generated after running the tests. it is generated in the Cucumber-reports folder which is 'index.html'
+
+### SampleReport
+![img_1.png](img_1.png)

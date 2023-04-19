@@ -5,7 +5,9 @@ const homepage = new HomePage();
 
 Given('user visits sky news website', function () {
     cy.visit(Cypress.config().baseUrl);
+});
 
+Given('accepts the consent', function () {
     cy.get(homepage.consentIframe).then(($iframe) => {
         const $body = $iframe.contents().find('body')
         cy.wrap($body)

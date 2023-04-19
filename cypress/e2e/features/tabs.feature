@@ -2,6 +2,7 @@ Feature: tabs feature
 
   Background:
     Given user visits sky news website
+    And accepts the consent
 
   Scenario Outline: verify the tab’s title
     When selected "<tabItems>" tab
